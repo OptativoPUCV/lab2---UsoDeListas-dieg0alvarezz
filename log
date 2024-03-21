@@ -219,3 +219,14 @@ exercises.c:62:7: error: dereferencing ‘void *’ pointer [-Werror]
 cc1: all warnings being treated as errors
 Compilation failed
 13b16b9
+Thu 21 Mar 2024 07:25:11 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:61:7: error: ‘suma’ undeclared (first use in this function)
+   61 |       suma += *elemento;
+      |       ^~~~
+exercises.c:61:7: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+07b5579
