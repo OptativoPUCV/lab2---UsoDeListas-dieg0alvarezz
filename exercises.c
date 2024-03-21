@@ -60,7 +60,7 @@ int sumaLista(List *L) {
   for (int i = 0; i <= tamano; i++)
     { 
       suma += *elemento;
-      elemento = (int*)next(L)
+      elemento = (int*)next(L);
       
     }
   
