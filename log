@@ -204,3 +204,18 @@ Thu 21 Mar 2024 07:23:17 PM UTC:
  tests:  0|5
 total_score: 0/70
 f286c93
+Thu 21 Mar 2024 07:25:05 PM UTC: 
+ exercises.c | 10 ++++------
+ 1 file changed, 4 insertions(+), 6 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:61:7: error: ‘suma’ undeclared (first use in this function)
+   61 |       suma += *elemento;
+      |       ^~~~
+exercises.c:61:7: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:62:7: error: dereferencing ‘void *’ pointer [-Werror]
+   62 |       *popFront(L);
+      |       ^~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+13b16b9
