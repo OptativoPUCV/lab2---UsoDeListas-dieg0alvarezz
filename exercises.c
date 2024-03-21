@@ -63,7 +63,7 @@ int sumaLista(List *L) {
       
     }
   
-  return suma;
+  return tamano;
 
 }
 
