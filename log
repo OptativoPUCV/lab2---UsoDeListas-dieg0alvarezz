@@ -23,3 +23,16 @@ exercises.c:64:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 f99b80e
+Thu 21 Mar 2024 06:57:04 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:57:23: error: expected expression before ‘int’
+   57 |   for (int i = 0; i < int get_size(List *L); i++)
+      |                       ^~~
+exercises.c:59:16: error: invalid use of incomplete typedef ‘List’
+   59 |       suma += L->data[i];
+      |                ^~
+Compilation failed
+d5e70e4
