@@ -59,7 +59,7 @@ int sumaLista(List *L) {
     {
       int *elemento = (int*)first(L);
       elemento = (int*)next(L);
-      popCurrent(L);
+      *popCurrent(L);
     }
   
   return suma;

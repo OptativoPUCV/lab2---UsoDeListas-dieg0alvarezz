@@ -419,3 +419,27 @@ exercises.c:60:12: error: variable ‘elemento’ set but not used [-Werror=unus
 cc1: all warnings being treated as errors
 Compilation failed
 ad5a3f0
+Thu 21 Mar 2024 07:48:31 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:58:19: error: expected expression before ‘!=’ token
+   58 |   while(elemento) != NULL)
+      |                   ^~
+exercises.c:58:3: error: this ‘while’ clause does not guard... [-Werror=misleading-indentation]
+   58 |   while(elemento) != NULL)
+      |   ^~~~~
+exercises.c:58:26: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘while’
+   58 |   while(elemento) != NULL)
+      |                          ^
+exercises.c:58:26: error: expected statement before ‘)’ token
+exercises.c:62:7: error: dereferencing ‘void *’ pointer [-Werror]
+   62 |       *popCurrent(L);
+      |       ^~~~~~~~~~~~~~
+exercises.c:60:12: error: variable ‘elemento’ set but not used [-Werror=unused-but-set-variable]
+   60 |       int *elemento = (int*)first(L);
+      |            ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+4ba8ee4
