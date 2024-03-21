@@ -449,3 +449,21 @@ Thu 21 Mar 2024 07:49:16 PM UTC:
  tests:  1|4
 total_score: 10/70
 2eacca8
+Thu 21 Mar 2024 07:50:34 PM UTC: 
+ exercises.c | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:58:19: error: expected expression before ‘!=’ token
+   58 |   while(elemento) != NULL)
+      |                   ^~
+exercises.c:58:3: error: this ‘while’ clause does not guard... [-Werror=misleading-indentation]
+   58 |   while(elemento) != NULL)
+      |   ^~~~~
+exercises.c:58:26: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘while’
+   58 |   while(elemento) != NULL)
+      |                          ^
+exercises.c:58:26: error: expected statement before ‘)’ token
+cc1: all warnings being treated as errors
+Compilation failed
+f233ac4
