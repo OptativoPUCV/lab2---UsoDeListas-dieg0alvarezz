@@ -61,7 +61,7 @@ int sumaLista(List *L) {
       suma += Front(L);
       
     }
-  )
+  
   return suma;
 
 }
