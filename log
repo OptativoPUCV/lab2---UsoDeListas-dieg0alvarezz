@@ -293,3 +293,14 @@ exercises.c:58:19: error: comparison between pointer and integer [-Werror]
 cc1: all warnings being treated as errors
 Compilation failed
 2671e13
+Thu 21 Mar 2024 07:28:16 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:58:9: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+   58 |   while(*elemento =! NULL)
+      |         ^
+cc1: all warnings being treated as errors
+Compilation failed
+7981ec2
