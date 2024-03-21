@@ -368,3 +368,12 @@ exercises.c:60:12: error: variable ‘elemento’ set but not used [-Werror=unus
 cc1: all warnings being treated as errors
 Compilation failed
 02bf813
+Thu 21 Mar 2024 07:43:08 PM UTC: 
+ exercises.c | 13 +++++--------
+ 1 file changed, 5 insertions(+), 8 deletions(-)
+In file included from test.c:5:
+exercises.c:55:20: error: parameter 1 (‘L’) has incomplete type
+   55 | int sumaLista(List L)
+      |               ~~~~~^
+Compilation failed
+613b3ee
