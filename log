@@ -136,3 +136,17 @@ exercises.c:61:15: error: implicit declaration of function ‘Front’ [-Werror=
 cc1: all warnings being treated as errors
 Compilation failed
 26555a1
+Thu 21 Mar 2024 07:19:54 PM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:59:3: error: expected ‘,’ or ‘;’ before ‘int’
+   59 |   int tamano = get_size(L);
+      |   ^~~
+exercises.c:60:24: error: ‘tamano’ undeclared (first use in this function)
+   60 |   for (int i = 0; i <= tamano; i++)
+      |                        ^~~~~~
+exercises.c:60:24: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+3016392
