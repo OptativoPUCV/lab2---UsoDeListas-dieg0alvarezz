@@ -315,3 +315,14 @@ exercises.c:58:21: error: comparison between pointer and integer [-Werror]
 cc1: all warnings being treated as errors
 Compilation failed
 b5bde5e
+Thu 21 Mar 2024 07:30:01 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:58:11: error: ‘elemento’ undeclared (first use in this function)
+   58 |   while((*elemento) != NULL)
+      |           ^~~~~~~~
+exercises.c:58:11: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+1932df8
