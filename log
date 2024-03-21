@@ -94,3 +94,20 @@ exercises.c:69:7: error: implicit declaration of function ‘PopFront’; did yo
 cc1: all warnings being treated as errors
 Compilation failed
 2cea37d
+Thu 21 Mar 2024 07:17:06 PM UTC: 
+ exercises.c | 18 +++++++-----------
+ 1 file changed, 7 insertions(+), 11 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:61:15: error: implicit declaration of function ‘Front’ [-Werror=implicit-function-declaration]
+   61 |       suma += Front(List* L);
+      |               ^~~~~
+exercises.c:61:21: error: expected expression before ‘List’
+   61 |       suma += Front(List* L);
+      |                     ^~~~
+exercises.c:64:3: error: expected statement before ‘)’ token
+   64 |   )
+      |   ^
+cc1: all warnings being treated as errors
+Compilation failed
+366869c

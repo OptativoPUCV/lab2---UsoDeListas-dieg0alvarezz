@@ -54,23 +54,19 @@ retorne la suma de sus elementos.
 */
 int sumaLista(List *L) {
   int suma = 0;
-  int suma = 0;
 
-    // Itera sobre todos los elementos de la lista
-    for (int *elemento = (int*)first(L); elemento != NULL; elemento =   
-    (int*)next(L)) {
-        suma += *elemento; // Suma el valor del elemento actual a la suma total
-    }
-
-    return suma;
-  while (L != NULL)
-    {
-      next(List L);
-      PopFront(L);
+  int tamano = get_size(L);
+  for (int i = 0; i <= tamano; i++)
+    { 
+      suma += Front(List* L);
       
     }
-   return suma;
+  )
+  return suma;
+
 }
+
+
 
 /*
 Ejercicio 3.
