@@ -58,7 +58,7 @@ int sumaLista(List *L) {
   int tamano = get_size(L);
   for (int i = 0; i <= tamano; i++)
     { 
-      suma += Front(List* L);
+      suma += Front(L);
       
     }
   )

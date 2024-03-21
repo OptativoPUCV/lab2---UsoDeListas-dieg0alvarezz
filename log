@@ -111,3 +111,17 @@ exercises.c:64:3: error: expected statement before ‘)’ token
 cc1: all warnings being treated as errors
 Compilation failed
 366869c
+Thu 21 Mar 2024 07:17:12 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:61:15: error: implicit declaration of function ‘Front’ [-Werror=implicit-function-declaration]
+   61 |       suma += Front(L);
+      |               ^~~~~
+exercises.c:64:3: error: expected statement before ‘)’ token
+   64 |   )
+      |   ^
+cc1: all warnings being treated as errors
+Compilation failed
+d8ff822
