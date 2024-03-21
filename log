@@ -251,3 +251,14 @@ exercises.c:67:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 58bea35
+Thu 21 Mar 2024 07:27:07 PM UTC: 
+ exercises.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:65:10: error: returning ‘int *’ from a function with return type ‘int’ makes integer from pointer without a cast [-Werror=int-conversion]
+   65 |   return elemento;
+      |          ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+87d0dc7
