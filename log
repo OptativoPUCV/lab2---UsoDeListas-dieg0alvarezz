@@ -36,3 +36,13 @@ exercises.c:59:16: error: invalid use of incomplete typedef ‘List’
       |                ^~
 Compilation failed
 d5e70e4
+Thu 21 Mar 2024 07:00:08 PM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:60:16: error: invalid use of incomplete typedef ‘List’
+   60 |       suma += L->data[i];
+      |                ^~
+Compilation failed
+137f6fe
