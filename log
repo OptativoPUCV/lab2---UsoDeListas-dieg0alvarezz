@@ -73,3 +73,24 @@ exercises.c:69:7: error: implicit declaration of function ‘PopFront’; did yo
 cc1: all warnings being treated as errors
 Compilation failed
 d36fbf3
+Thu 21 Mar 2024 07:13:48 PM UTC: 
+ exercises.c | 16 ++++++++--------
+ 1 file changed, 8 insertions(+), 8 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:57:7: error: redefinition of ‘suma’
+   57 |   int suma = 0;
+      |       ^~~~
+exercises.c:56:7: note: previous definition of ‘suma’ with type ‘int’
+   56 |   int suma = 0;
+      |       ^~~~
+exercises.c:68:12: error: expected expression before ‘List’
+   68 |       next(List L);
+      |            ^~~~
+exercises.c:69:7: error: implicit declaration of function ‘PopFront’; did you mean ‘popFront’? [-Werror=implicit-function-declaration]
+   69 |       PopFront(L);
+      |       ^~~~~~~~
+      |       popFront
+cc1: all warnings being treated as errors
+Compilation failed
+2cea37d
