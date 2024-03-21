@@ -326,3 +326,24 @@ exercises.c:58:11: error: ‘elemento’ undeclared (first use in this function)
 exercises.c:58:11: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 1932df8
+Thu 21 Mar 2024 07:35:11 PM UTC: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:58:19: error: expected expression before ‘!=’ token
+   58 |   while(elemento) != NULL)
+      |                   ^~
+exercises.c:58:3: error: this ‘while’ clause does not guard... [-Werror=misleading-indentation]
+   58 |   while(elemento) != NULL)
+      |   ^~~~~
+exercises.c:58:26: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘while’
+   58 |   while(elemento) != NULL)
+      |                          ^
+exercises.c:58:26: error: expected statement before ‘)’ token
+exercises.c:60:12: error: variable ‘elemento’ set but not used [-Werror=unused-but-set-variable]
+   60 |       int *elemento = (int*)first(L);
+      |            ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+9661b5e
