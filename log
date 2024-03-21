@@ -230,3 +230,24 @@ exercises.c:61:7: error: ‘suma’ undeclared (first use in this function)
 exercises.c:61:7: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 07b5579
+Thu 21 Mar 2024 07:25:28 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:61:11: error: expected identifier or ‘(’ before ‘=’ token
+   61 |       int = suma += *elemento;
+      |           ^
+exercises.c:60:12: error: unused variable ‘elemento’ [-Werror=unused-variable]
+   60 |       int *elemento = (int*)first(L);
+      |            ^~~~~~~~
+exercises.c:65:10: error: ‘suma’ undeclared (first use in this function)
+   65 |   return suma;
+      |          ^~~~
+exercises.c:65:10: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:67:1: error: control reaches end of non-void function [-Werror=return-type]
+   67 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+58bea35

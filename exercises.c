@@ -58,11 +58,11 @@ int sumaLista(List *L) {
   while(elemento != NULL)
     {
       int *elemento = (int*)first(L);
-      suma += *elemento;
+      int = suma += *elemento;
       popFront(L);
     }
   
-  return *elemento;
+  return suma;
 
 }
 
