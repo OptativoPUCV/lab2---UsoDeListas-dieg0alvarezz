@@ -56,8 +56,8 @@ int sumaLista(List *L) {
   int suma = 0;
   int tamano = get_size(L);
   for (int i = 0; i < tamano; i++)
-    {
-      suma += L->data[i];
+    { 
+      suma += *(int*)first(L);
     
     }
   
