@@ -592,3 +592,17 @@ Thu 21 Mar 2024 07:56:11 PM UTC:
  tests:  1|4
 total_score: 10/70
 e8fb93e
+Thu 21 Mar 2024 08:05:18 PM UTC: 
+ exercises.c | 14 ++++++++++++++
+ 1 file changed, 14 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘eliminaElementos’:
+exercises.c:82:4: error: ‘elemento’ undeclared (first use in this function)
+   82 |   *elemento = (int*)first(L);
+      |    ^~~~~~~~
+exercises.c:82:4: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:85:29: error: expected statement before ‘)’ token
+   85 |       if (elem == *elemento))
+      |                             ^
+Compilation failed
+7d4bb36
