@@ -282,3 +282,14 @@ exercises.c:65:10: error: returning ‘int *’ from a function with return type
 cc1: all warnings being treated as errors
 Compilation failed
 9ce1846
+Thu 21 Mar 2024 07:28:08 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:58:19: error: comparison between pointer and integer [-Werror]
+   58 |   while(*elemento != NULL)
+      |                   ^~
+cc1: all warnings being treated as errors
+Compilation failed
+2671e13

@@ -62,7 +62,7 @@ int sumaLista(List *L) {
       popFront(L);
     }
   
-  return elemento;
+  return suma;
 
 }
 
