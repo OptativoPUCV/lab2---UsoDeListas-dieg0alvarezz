@@ -58,3 +58,18 @@ Thu 21 Mar 2024 07:03:19 PM UTC:
  tests:  0|5
 total_score: 0/70
 b8b8d2a
+Thu 21 Mar 2024 07:09:04 PM UTC: 
+ exercises.c | 10 +++++++++-
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:68:15: error: implicit declaration of function ‘Front’ [-Werror=implicit-function-declaration]
+   68 |       suma += Front(L);
+      |               ^~~~~
+exercises.c:69:7: error: implicit declaration of function ‘PopFront’; did you mean ‘popFront’? [-Werror=implicit-function-declaration]
+   69 |       PopFront(L);
+      |       ^~~~~~~~
+      |       popFront
+cc1: all warnings being treated as errors
+Compilation failed
+d36fbf3

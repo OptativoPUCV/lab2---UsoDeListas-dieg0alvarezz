@@ -54,13 +54,21 @@ retorne la suma de sus elementos.
 */
 int sumaLista(List *L) {
   int suma = 0;
+  /*
   int tamano = get_size(L);
   for (int i = 0; i <= tamano; i++)
     { 
-      suma += *(int*)first(L);
+      suma += Front(List* L);
     
     }
-  
+  )
+  */
+  while (L != NULL)
+    {
+      suma += Front(L);
+      PopFront(L);
+      
+    }
    return suma;
 }
 
