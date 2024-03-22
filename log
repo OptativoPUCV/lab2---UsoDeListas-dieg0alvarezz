@@ -651,3 +651,13 @@ Thu 21 Mar 2024 08:31:27 PM UTC:
  tests:  3|2
 total_score: 40/70
 2472ccb
+Fri 22 Mar 2024 08:13:01 PM UTC: 
+ exercises.c | 13 +++++++++++++
+ 1 file changed, 13 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:55:31: error: void value not ignored as it ought to be
+   55 |         if (elemento == NULL) exit(EXIT_FAILURE)
+      |                               ^~~~~~~~~~~~~~~~~~
+Compilation failed
+fd53156

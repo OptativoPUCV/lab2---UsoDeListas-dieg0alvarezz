@@ -41,10 +41,23 @@ debes reservar memoria para cada elemento que agregues.
 Al finalizar retorna la lista creada.
 */
 
+
 List* crea_lista() {
-   List* L = create_list();
-  
-   return L;
+    List* L = create_list();
+    if (L == NULL) {
+        printf("Error al crear la lista\n");
+        return NULL;
+    }
+
+    // Agregar elementos del 1 al 10 a la lista
+    for (int i = 1; i <= 10; i++) {
+        int* elemento = (int*)malloc(sizeof(int));
+        if (elemento == NULL) exit(EXIT_FAILURE)
+        *elemento = i;
+        pushBack(L, elemento);
+    }
+
+    return L;
 }
 
 /*
@@ -127,6 +140,7 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 */
 
 int parentesisBalanceados(char *cadena) {
+  
    return 0;
 }
 
