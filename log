@@ -687,3 +687,9 @@ exercises.c:53:21: error: ‘i’ undeclared (first use in this function)
 exercises.c:53:21: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 5637b3a
+Fri 22 Mar 2024 08:14:41 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  4|1
+total_score: 50/70
+b9eff4b
