@@ -50,7 +50,7 @@ List* crea_lista() {
     }
 
     // Agregar elementos del 1 al 10 a la lista
-    for (int i = 1; i <= 10; i++) {
+    for (int i = 0; i < 10; i++) {
         int* elemento = (int*)malloc(sizeof(int));
         if (elemento == NULL) exit(EXIT_FAILURE);
         *elemento = i;
