@@ -45,10 +45,8 @@ Al finalizar retorna la lista creada.
 List* crea_lista() {
     List* L = create_list();
 
-
-    // Agregar elementos del 1 al 10 a la lista
     for (int i = 1; i <= 10; i++) {
-        int* elemento = (int*)malloc(sizeof(int));
+        int* elemento = (int*)malloc(10 * sizeof(int));
         if (elemento == NULL) exit(EXIT_FAILURE);
         *elemento = i;
         pushBack(L, elemento);
