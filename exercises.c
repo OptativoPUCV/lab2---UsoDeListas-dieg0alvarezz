@@ -46,7 +46,7 @@ List* crea_lista() {
     List* L = create_list();
 
     for (int i = 1; i <= 10; i++) {
-        int* elemento = (int*)malloc(9 * sizeof(int));
+        int* elemento = (int*)malloc(i * sizeof(int));
         if (elemento == NULL) exit(EXIT_FAILURE);
         *elemento = i;
         pushBack(L, elemento);
