@@ -673,3 +673,17 @@ Fri 22 Mar 2024 08:14:13 PM UTC:
  tests:  3|2
 total_score: 40/70
 d12d1e2
+Fri 22 Mar 2024 08:14:26 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:53:14: error: expected identifier or ‘(’ before numeric constant
+   53 |     for (int 1 = 0; i <= 10; i++) {
+      |              ^
+exercises.c:53:21: error: ‘i’ undeclared (first use in this function)
+   53 |     for (int 1 = 0; i <= 10; i++) {
+      |                     ^
+exercises.c:53:21: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+5637b3a
