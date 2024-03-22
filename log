@@ -705,3 +705,30 @@ Fri 22 Mar 2024 08:16:46 PM UTC:
  tests:  4|1
 total_score: 50/70
 8b8b785
+Fri 22 Mar 2024 08:19:10 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:49:24: error: initialization of ‘int’ from ‘int *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   49 |         int elemento = (int*)malloc(10 * sizeof(int));
+      |                        ^
+exercises.c:50:22: error: comparison between pointer and integer [-Werror]
+   50 |         if (elemento == NULL) exit(EXIT_FAILURE);
+      |                      ^~
+exercises.c:51:9: error: invalid type argument of unary ‘*’ (have ‘int’)
+   51 |         *elemento = i;
+      |         ^~~~~~~~~
+exercises.c:52:21: error: passing argument 2 of ‘pushBack’ makes pointer from integer without a cast [-Werror=int-conversion]
+   52 |         pushBack(L, elemento);
+      |                     ^~~~~~~~
+      |                     |
+      |                     int
+In file included from exercises.c:6,
+                 from test.c:5:
+arraylist.h:20:30: note: expected ‘void *’ but argument is of type ‘int’
+   20 | void pushBack(List *L, void *dato);
+      |                        ~~~~~~^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+e03146b
