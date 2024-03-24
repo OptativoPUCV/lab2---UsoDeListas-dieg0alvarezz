@@ -1227,3 +1227,14 @@ exercises.c:160:1: error: control reaches end of non-void function [-Werror=retu
 cc1: all warnings being treated as errors
 Compilation failed
 a72b0b5
+Sun 24 Mar 2024 02:28:31 AM UTC: 
+ exercises.c | 6 ++++++
+ 1 file changed, 6 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:159:7: error: unused variable ‘balanceados’ [-Werror=unused-variable]
+  159 |   int balanceados = (get_size(pila) == 0);
+      |       ^~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+72741ae
