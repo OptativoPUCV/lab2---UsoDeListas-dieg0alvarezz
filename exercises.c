@@ -155,12 +155,14 @@ int parentesisBalanceados(char *cadena)
             pop(pila); 
         }
         ptr++;
-    }
-     while (get_size(pila) > 0) {
-          pop(pila);
-      }
-      free(pila);
+        int balanceados = (get_size(pila) == 0);
 
-      return 1;
-  }
+        // Liberar la memoria de la pila
+        while (get_size(pila) > 0) {
+            pop(pila);
+        }
+        free(pila);
+
+        return balanceados;
+    }
 
