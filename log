@@ -1823,3 +1823,14 @@ Sun 24 Mar 2024 02:40:35 AM UTC:
  tests:  9|0
 total_score: 70/70
 d0dd308
+Sun 24 Mar 2024 02:42:49 AM UTC: 
+ exercises.c | 8 ++++++--
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:171:1: error: control reaches end of non-void function [-Werror=return-type]
+  171 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+c0b69cd
