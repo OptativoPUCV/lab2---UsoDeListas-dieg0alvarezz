@@ -139,10 +139,10 @@ int cadena_balanceada(char* cadena){
 
   for (int i = 0; i < strlen(cadena); i++){
     char c = cadena[i];
-    if (c == '(' || c == '[' || c == '{'){
+    if (c == '(' ){
       push(pila, &c);
     }
-    else if (c == ')' || c == ']' || c == '}')
+    else if (c == ')')
     {
       char *top = top(pila);
       if (top == NULL){
@@ -151,7 +151,7 @@ int cadena_balanceada(char* cadena){
       else{
         char parentesisApertura = top(pila);
 
-        if (parentesisApertura == '(' && c == ')' || parentesisApertura == '[' && c == ']' || parentesisApertura == '{' && c == '}'){
+        if (parentesisApertura == '(' && c == ')' {
           pop(pila);
         }
 

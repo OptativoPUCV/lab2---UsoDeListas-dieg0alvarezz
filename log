@@ -792,3 +792,40 @@ test.c:217:9: error: implicit declaration of function ‘parentesisBalanceados�
 cc1: all warnings being treated as errors
 Compilation failed
 7e434a6
+Sun 24 Mar 2024 02:08:37 AM UTC: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘cadena_balanceada’:
+exercises.c:138:17: error: implicit declaration of function ‘createStack’; did you mean ‘create_stack’? [-Werror=implicit-function-declaration]
+  138 |   Stack* pila = createStack();
+      |                 ^~~~~~~~~~~
+      |                 create_stack
+exercises.c:138:17: error: initialization of ‘Stack *’ {aka ‘List *’} from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+exercises.c:147:19: error: called object ‘top’ is not a function or function pointer
+  147 |       char *top = top(pila);
+      |                   ^~~
+exercises.c:147:13: note: declared here
+  147 |       char *top = top(pila);
+      |             ^~~
+exercises.c:152:35: error: called object ‘top’ is not a function or function pointer
+  152 |         char parentesisApertura = top(pila);
+      |                                   ^~~
+exercises.c:147:13: note: declared here
+  147 |       char *top = top(pila);
+      |             ^~~
+exercises.c:154:50: error: expected ‘)’ before ‘{’ token
+  154 |         if (parentesisApertura == '(' && c == ')' {
+      |            ~                                     ^~
+      |                                                  )
+exercises.c:161:7: error: expected expression before ‘}’ token
+  161 |       }
+      |       ^
+test.c: In function ‘test_parentesis_balanceados’:
+test.c:217:9: error: implicit declaration of function ‘parentesisBalanceados’; did you mean ‘test_parentesis_balanceados’? [-Werror=implicit-function-declaration]
+  217 |     if(!parentesisBalanceados(s)){
+      |         ^~~~~~~~~~~~~~~~~~~~~
+      |         test_parentesis_balanceados
+cc1: all warnings being treated as errors
+Compilation failed
+36ec664
