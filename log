@@ -1238,3 +1238,9 @@ exercises.c:159:7: error: unused variable ‘balanceados’ [-Werror=unused-vari
 cc1: all warnings being treated as errors
 Compilation failed
 72741ae
+Sun 24 Mar 2024 02:28:45 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  5|1
+total_score: 50/70
+5111e38
