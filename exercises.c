@@ -167,5 +167,5 @@ int parentesisBalanceados(char *cadena) {
     }
     free(pila);
 
-    //return balanceados;
+    return 1
 }
