@@ -146,7 +146,7 @@ int parentesisBalanceados(char *cadena) {
               
                 return 0;
             } else {
-                char topChar = top(pila); a
+                char topChar = top(pila);
                 if (topChar == '(') {
                     pop(pila); 
                 } else {
