@@ -135,38 +135,33 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 */
 
 int parentesisBalanceados(char *cadena) {
-    int contadorParentesis = 0;
-    int contadorCorchetes = 0;
-    int contadorLlaves = 0;
-    const char *caracter = cadena;
+    Stack *pila = create_stack();
+    char *ptr = cadena;
 
-    while (*caracter != '\0') {
-        if (*caracter == '(') {
-            contadorParentesis++;
-        } else if (*caracter == ')') {
-            contadorParentesis--;
-        } else if (*caracter == '[') {
-            contadorCorchetes++;
-        } else if (*caracter == ']') {
-            contadorCorchetes--;
-        } else if (*caracter == '{') {
-            contadorLlaves++;
-        } else if (*caracter == '}') {
-            contadorLlaves--;
+    while (*ptr != '\0') {
+        if (*ptr == '(' || *ptr == '[' || *ptr == '{') {
+            push(pila, (void *)ptr);
+        } else if (*ptr == ')' || *ptr == ']' || *ptr == '}') {
+            if (get_size(pila) == 0) {
+                return 0; 
+            }
+            char *top_char = (char *)top(pila);
+            if ((*ptr == ')' && *top_char != '(') ||
+                (*ptr == ']' && *top_char != '[') ||
+                (*ptr == '}' && *top_char != '{')) {
+                return 0;
+            }
+            pop(pila); 
         }
+        ptr++;
+    }
 
-              if (contadorParentesis < 0 || contadorCorchetes < 0 || contadorLlaves < 0) {
-                  return 1; 
-              }
-              caracter++;
-          }
+    int balanceados = (get_size(pila) == 0); 
+    while (get_size(pila) > 0) {
+        pop(pila);
+    }
+    free(pila);
 
-          if (contadorParentesis == 0 && contadorCorchetes == 0 && contadorLlaves == 0) {
-              return 1; 
-          } else {
-              return 0; 
-          }
-      }
-
-
+    return balanceados;
+}
 
