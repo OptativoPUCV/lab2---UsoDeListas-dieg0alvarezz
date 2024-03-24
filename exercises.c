@@ -135,22 +135,26 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 */
 
 int parentesisBalanceados(char *cadena) {
-   int contador = 0;
-      const char *caracter = cadena;
+  int contador = 0;
+  const char *caracter = cadena;
 
-      while (*caracter != '\0') {
-          if (*caracter == '(') {
-              contador++;
-          } else if (*caracter == ')') {
-              contador--;
-          }
-          if (contador < 0) {
-              return 0; 
-          }
-          caracter++;
+  while (*caracter != '\0') {
+      if (*caracter == '(') {
+          contador++;
+      } else if (*caracter == ')') {
+          contador--;
       }
-
-      return contador == 0 ? 1 : 0;
+      if (contador < 0) {
+          return 0; // No hay misma cantidad de paréntesis
+      }
+      caracter++;
   }
+
+  if (contador == 0) {
+      return 1;
+  } else {
+      return 0;
+  }
+  
 
 
