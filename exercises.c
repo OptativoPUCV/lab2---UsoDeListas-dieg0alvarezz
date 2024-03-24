@@ -135,30 +135,22 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 */
 
 int parentesisBalanceados(char *cadena) {
-    Stack* pila = createStack();
+   int contador = 0;
+      const char *caracter = cadena;
 
-    for (int i = 0; i < strlen(cadena); i++) {
-        char c = cadena[i];
-        if (c == '(') {
-            push(pila, c); 
-        } else if (c == ')') {
-            if (isEmpty(pila)) {
-              
-                return 0;
-            } else {
-                char topChar = top(pila);
-                if (topChar == '(') {
-                    pop(pila); 
-                } else {
+      while (*caracter != '\0') {
+          if (*caracter == '(') {
+              contador++;
+          } else if (*caracter == ')') {
+              contador--;
+          }
+          if (contador < 0) {
+              return 0; 
+          }
+          caracter++;
+      }
 
-                    return 0;
-                }
-            }
-        }
-    }
-
-
-    return isEmpty(pila) ? 1 : 0;
-}
+      return contador == 0 ? 1 : 0;
+  }
 
 
