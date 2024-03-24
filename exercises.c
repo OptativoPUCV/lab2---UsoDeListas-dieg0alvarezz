@@ -156,11 +156,7 @@ int parentesisBalanceados(char *cadena) {
         ptr++;
     }
   
-      if(get_size(pila) == 0)
-      {
-        return 1;
-      }
-
+    
       
     
 }
