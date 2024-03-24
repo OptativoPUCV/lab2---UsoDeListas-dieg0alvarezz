@@ -162,9 +162,9 @@ int parentesisBalanceados(char *cadena) {
     }
 
     if (contadorParentesis == 0 && contadorCorchetes == 0 && contadorLlaves == 0) {
-        return 1;
-    } else {
         return 0;
+    } else {
+        return 1;
     }
 }
 
