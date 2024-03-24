@@ -157,11 +157,12 @@ int parentesisBalanceados(char *cadena) {
     }
   
 
-  while (get_size(pila) > 0) {
-      pop(pila);
-  }
-  free(pila);
+      while (get_size(pila) > 0) {
+          pop(pila);
+      }
+      free(pila);
 
-  return 1;
+      return 1;
+  }
 }
 
