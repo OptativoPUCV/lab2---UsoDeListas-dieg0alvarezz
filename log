@@ -756,3 +756,39 @@ Fri 22 Mar 2024 08:22:45 PM UTC:
  tests:  4|1
 total_score: 50/70
 9f06a11
+Sun 24 Mar 2024 02:06:18 AM UTC: 
+ exercises.c | 27 ++++++++++++++++++++++++++-
+ 1 file changed, 26 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘cadena_balanceada’:
+exercises.c:138:17: error: implicit declaration of function ‘createStack’; did you mean ‘create_stack’? [-Werror=implicit-function-declaration]
+  138 |   Stack* pila = createStack();
+      |                 ^~~~~~~~~~~
+      |                 create_stack
+exercises.c:138:17: error: initialization of ‘Stack *’ {aka ‘List *’} from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+exercises.c:147:19: error: called object ‘top’ is not a function or function pointer
+  147 |       char *top = top(pila);
+      |                   ^~~
+exercises.c:147:13: note: declared here
+  147 |       char *top = top(pila);
+      |             ^~~
+exercises.c:152:35: error: called object ‘top’ is not a function or function pointer
+  152 |         char parentesisApertura = top(pila);
+      |                                   ^~~
+exercises.c:147:13: note: declared here
+  147 |       char *top = top(pila);
+      |             ^~~
+exercises.c:154:39: error: suggest parentheses around ‘&&’ within ‘||’ [-Werror=parentheses]
+  154 |         if (parentesisApertura == '(' && c == ')' || parentesisApertura == '[' && c == ']' || parentesisApertura == '{' && c == '}'){
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+exercises.c:154:121: error: suggest parentheses around ‘&&’ within ‘||’ [-Werror=parentheses]
+  154 |         if (parentesisApertura == '(' && c == ')' || parentesisApertura == '[' && c == ']' || parentesisApertura == '{' && c == '}'){
+      |                                                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+test.c: In function ‘test_parentesis_balanceados’:
+test.c:217:9: error: implicit declaration of function ‘parentesisBalanceados’; did you mean ‘test_parentesis_balanceados’? [-Werror=implicit-function-declaration]
+  217 |     if(!parentesisBalanceados(s)){
+      |         ^~~~~~~~~~~~~~~~~~~~~
+      |         test_parentesis_balanceados
+cc1: all warnings being treated as errors
+Compilation failed
+7e434a6
