@@ -149,9 +149,9 @@ int parentesisBalanceados(char *cadena){
         return 0;
       }
       else{
-        char parentesisApertura = top(pila);
+        char parentesisBalanceados = top(pila);
 
-        if (parentesisApertura == '(' && c == ')' {
+        if (parentesisBalanceados == '(' && c == ')' {
           pop(pila);
         }
 
