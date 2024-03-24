@@ -163,6 +163,6 @@ int parentesisBalanceados(char *cadena) {
       free(pila);
 
       return 1;
-  }
+  
 }
 
